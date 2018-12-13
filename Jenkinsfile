@@ -31,7 +31,7 @@ try{
     }
 } catch (Exception e) {
     // Notify
-    echo "send error mail to jenkins@appuio.ch"
-    mail subject: "Build failed with ${e.message}", to: "jenkins@appuio.ch", body: "Job failed: ${env.BUILD_URL} \n\n${e.stackTrace}"
+    echo "send error mail to houssem.romdhane@esprit.tn"
+    mail subject: "Build failed with ${e.message}", to: "houssem.romdhane@esprit.tn", body: "Job failed: ${env.BUILD_URL} \n\n${e.stackTrace}"
     throw e;
 }
